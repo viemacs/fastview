@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>FastView</title>
+  <meta charset="utf-8">
+  <script src="js/vue.min.js"></script>
+  <script src="js/echarts.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container row">
+	<div id="head" class="offset-md-2 col-md-8">
+	  <h3>{{title()}}</h3>
+	  <div id="title">{{site}}</div>
+	</div>
+  </div>
+
+  <div class="container row">
+	<div class="col-md-2">
+	  <div id="view-list" v-html="html">{{List()}}</div>
+	</div>
+
+	<div id="views" class="offset-md-1 col-md-6">
+	  <div id="viewA" class="chart"></div>
+	  <div id="viewB" class="chart"></div>
+	</div>
+  </div>
+
+</body>
+<style>
+  .chart{width:560px;height:320px;background:#eee;}
+</style>
+<script type="module" src="js/view.js"></script>
+<script type="module" src="js/rc.js"></script>
+</html>

@@ -1,0 +1,8 @@
+/app/
+/node_modules/
+
+/conf/fastview.json
+/viewmodel/*
+!/viewmodel/_demo*
+!/viewmodel/_options.ts
+!/viewmodel/index.ts

@@ -1,0 +1,14 @@
+// conf/fastview.json
+// Configurations of fastview
+// Database types supported currently: mysql
+
+{
+  "releaseMode": false,
+  "database": {
+    "driver": "mysql",
+    "host": "localhost",
+    "user": "user",
+    "password": "password",
+    "database": "database"
+  }
+}
